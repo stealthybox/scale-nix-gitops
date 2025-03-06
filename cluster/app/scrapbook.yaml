@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scrapbook
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scrapbook
+  template:
+    metadata:
+      labels:
+        app: scrapbook
+    spec:
+      containers:
+      - name: scrapbook
+        image: scrapbook:v2
+        imagePullPolicy: IfNotPresent
+        args:
+        - go-image-app
+        envFrom:
+        - secretRef:
+            name: postgres
+        ports:
+        - name: http
+          containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: scrapbook
+  name: scrapbook
+spec:
+  type: ClusterIP
+  ports:
+  - name: "scrapbook"
+    port: 3000
+  selector:
+    app: scrapbook

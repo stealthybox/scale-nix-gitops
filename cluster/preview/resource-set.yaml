@@ -1,0 +1,68 @@
+---
+apiVersion: fluxcd.controlplane.io/v1
+kind: ResourceSetInputProvider
+metadata:
+  name: app-pull-requests
+  namespace: app-preview
+  annotations:
+    fluxcd.controlplane.io/reconcileEvery: "1m"
+spec:
+  type: GitHubPullRequest
+  url: https://github.com/stealthybox/go-scrapbook
+  secretRef:
+    name: github-auth
+  # filter:
+  #   labels:
+  #     - "deploy/flux-preview"
+  # defaultValues:
+  #   chart: "charts/app"
+
+---
+apiVersion: fluxcd.controlplane.io/v1
+kind: ResourceSet
+metadata:
+  name: app
+  namespace: app-preview
+spec:
+  serviceAccountName: flux
+  inputsFrom:
+    - apiVersion: fluxcd.controlplane.io/v1
+      kind: ResourceSetInputProvider
+      name: app-pull-requests
+  resources:
+    - apiVersion: source.toolkit.fluxcd.io/v1
+      kind: GitRepository
+      metadata:
+        name: app-<< inputs.id >>
+        namespace: app-preview
+      spec:
+        provider: generic # or 'github' if using GitHub App
+        interval: 1h
+        url: https://github.com/stealthybox/go-scrapbook
+        ref:
+          commit: << inputs.sha >>
+        secretRef:
+          name: github-auth
+    - apiVersion: kustomize.toolkit.fluxcd.io/v1
+      kind: Kustomization
+      metadata:
+        name: app-<< inputs.id >>
+        namespace: app-preview
+        annotations:
+          # event.toolkit.fluxcd.io/preview-url: "https://app-<< inputs.id >>.example.com"
+          event.toolkit.fluxcd.io/branch: << inputs.branch | quote >>
+          event.toolkit.fluxcd.io/author: << inputs.author | quote >>
+      spec:
+        serviceAccountName: flux
+        interval: 10m
+        targetNamespace: app-<< inputs.id >>
+        sourceRef:
+          kind: GitRepository
+          name: app-<< inputs.id >>
+        path: "./cluster/app"
+        prune: true
+        timeout: 1m
+        images:
+        - name: scrapbook
+          newName: scrapbook
+          newTag: << inputs.sha >>
