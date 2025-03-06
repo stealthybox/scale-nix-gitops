@@ -1,0 +1,29 @@
+{
+  "name": "floxtest",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+      // set this to ".." if you want the .flox environment to be in the root of the repo
+      // and still be cached within the container build.
+      // this can be ergonomic within a codespace or a git clone on somebody's
+      // mac or linux laptop if you want the same env.
+      // buildkit does have other ways of constructing build context,
+      // or the repo could just bundle a symlink from ./flox -> ./.devcontainer/.flox
+  },
+  "postCreateCommand": ".devcontainer/post-create.sh",
+  // "runArgs": ["--network", "host"],
+  "features": {
+    // // docker-outside-of-docker fails to create the kind cluster on codespaces for some reason
+    // "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+    //   "version": "latest",
+    //   "moby": false
+    // }
+    "ghcr.io/devcontainers/features/docker-in-docker:2.12.0": {
+      "version": "latest",
+      "moby": false,
+      "installDockerBuildx": false,
+      "installDockerComposeSwitch": false,
+      "disableIp6tables": true // needed for kind to start on codespaces https://github.com/kubernetes-sigs/kind/issues/3696
+    }
+  }
+}

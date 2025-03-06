@@ -1,0 +1,17 @@
+version = 1
+
+[install]
+zsh.pkg-path = "zsh"
+gnupg.pkg-path = "gnupg"
+jq.pkg-path = "jq"
+kubectl.pkg-path = "kubectl"
+kubernetes-helm.pkg-path = "kubernetes-helm"
+kind.pkg-path = "kind"
+docker.pkg-path = "docker"
+nano.pkg-path = "nano"
+
+[services]
+kind.command = "kind create cluster"
+
+[options]
+systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
