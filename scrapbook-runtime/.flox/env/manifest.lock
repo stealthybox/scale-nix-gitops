@@ -1,0 +1,153 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "imagemagick": {
+        "pkg-path": "imagemagick"
+      }
+    },
+    "hook": {
+      "on-activate": "        unset GOCACHE\n        unset GOENV\n        unset GOMODCACHE\n        unset GOPATH\n        unset GOROOT\n        unset GOTOOLDIR\n        unset GOMOD\n\n        unset GOPROXY\n"
+    },
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/pdw4p8aj039wnhcrm14sh3yl23jwwd9i-imagemagick-7.1.1-44.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "name": "imagemagick-7.1.1-44",
+      "pname": "imagemagick",
+      "rev": "ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "rev_count": 762036,
+      "rev_date": "2025-03-03T13:57:36Z",
+      "scrape_date": "2025-03-04T00:30:58Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.1-44",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/rn2qbpd942ap5lyw6sf4lb3x9cw1wx7y-imagemagick-7.1.1-44-dev",
+        "doc": "/nix/store/7sslivwbk2pwqgkskxby9wgd1mqjznd2-imagemagick-7.1.1-44-doc",
+        "out": "/nix/store/2hmigm6blnbp9m49c3dkqiqqnywl3l39-imagemagick-7.1.1-44"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/1s83fyj70wg2hfwmmn0fr9hhff3vf5as-imagemagick-7.1.1-44.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "name": "imagemagick-7.1.1-44",
+      "pname": "imagemagick",
+      "rev": "ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "rev_count": 762036,
+      "rev_date": "2025-03-03T13:57:36Z",
+      "scrape_date": "2025-03-04T00:30:58Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.1-44",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/fa8g3d6xgi2cxbz2d30wm20lxs1x5ra9-imagemagick-7.1.1-44-dev",
+        "doc": "/nix/store/qw4p1m64bf4lcwi6jywxjgpqbcfnzqjs-imagemagick-7.1.1-44-doc",
+        "out": "/nix/store/1jrc1fwjd0gqcwc9rj370jrmz1s6g3is-imagemagick-7.1.1-44"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/kyp1gid9dmkqsksw03gbfnbyg5x8a8sv-imagemagick-7.1.1-44.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "name": "imagemagick-7.1.1-44",
+      "pname": "imagemagick",
+      "rev": "ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "rev_count": 762036,
+      "rev_date": "2025-03-03T13:57:36Z",
+      "scrape_date": "2025-03-04T00:30:58Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.1-44",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/zz5hmb2ii03rbzlz9kynl8qf640w5rv3-imagemagick-7.1.1-44-dev",
+        "doc": "/nix/store/kz8mb6ljy5hykr5jnkzw6n7dfb7y63vf-imagemagick-7.1.1-44-doc",
+        "out": "/nix/store/fi2rd0i932y1v7gl9l8g6gd1lfnrjrvk-imagemagick-7.1.1-44"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/l0vvmb2ainlyy3fsgbrhg8p1zczvz5li-imagemagick-7.1.1-44.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "name": "imagemagick-7.1.1-44",
+      "pname": "imagemagick",
+      "rev": "ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "rev_count": 762036,
+      "rev_date": "2025-03-03T13:57:36Z",
+      "scrape_date": "2025-03-04T00:30:58Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.1-44",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/ans56z168i82nm6wavq3si7jbc8yc6h9-imagemagick-7.1.1-44-dev",
+        "doc": "/nix/store/8xm4ky63p98x1lgj0rbhkwyvwd80zy5v-imagemagick-7.1.1-44-doc",
+        "out": "/nix/store/85z0ndy4qbafq6ihg2dbrq0kiln7wjkp-imagemagick-7.1.1-44"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}

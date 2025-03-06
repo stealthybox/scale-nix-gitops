@@ -10,6 +10,7 @@
       // buildkit does have other ways of constructing build context,
       // or the repo could just bundle a symlink from ./flox -> ./.devcontainer/.flox
   },
+  "postStartCommand": "sudo flox activate -d /root/ -- setfacl -k /tmp",
   "postCreateCommand": ".devcontainer/post-create.sh",
   // "runArgs": ["--network", "host"],
   "features": {

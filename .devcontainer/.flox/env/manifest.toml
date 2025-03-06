@@ -9,6 +9,8 @@ kubernetes-helm.pkg-path = "kubernetes-helm"
 kind.pkg-path = "kind"
 docker.pkg-path = "docker"
 nano.pkg-path = "nano"
+acl.pkg-path = "acl"
+acl.systems = ["aarch64-linux", "x86_64-linux"]
 
 [services]
 kind.command = "kind create cluster"

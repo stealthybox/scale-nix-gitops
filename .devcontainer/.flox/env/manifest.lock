@@ -3,6 +3,13 @@
   "manifest": {
     "version": 1,
     "install": {
+      "acl": {
+        "pkg-path": "acl",
+        "systems": [
+          "aarch64-linux",
+          "x86_64-linux"
+        ]
+      },
       "docker": {
         "pkg-path": "docker"
       },
@@ -49,6 +56,76 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "acl",
+      "broken": false,
+      "derivation": "/nix/store/3p6kxs4jp9qhciwjzc7x8nlaz00mc3f7-acl-2.3.2.drv",
+      "description": "Library and tools for manipulating access control lists",
+      "install_id": "acl",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5135c59491985879812717f4c9fea69604e7f26f",
+      "name": "acl-2.3.2",
+      "pname": "acl",
+      "rev": "5135c59491985879812717f4c9fea69604e7f26f",
+      "rev_count": 759373,
+      "rev_date": "2025-02-26T09:09:39Z",
+      "scrape_date": "2025-02-28T05:09:33Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.3.2",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/0dbbbi68i226zs2f0d5xffmlzaqa8j5v-acl-2.3.2-bin",
+        "dev": "/nix/store/kwc2kckvppf7j7x8ycdljvpr7xwvxdpn-acl-2.3.2-dev",
+        "doc": "/nix/store/3mzfv5sfcky5xgk84mpilnr1y6glq554-acl-2.3.2-doc",
+        "man": "/nix/store/7fl29dpmn9b35jhhbaxblanp8b5a6543-acl-2.3.2-man",
+        "out": "/nix/store/s31pbqv4v8p6wpa8jyxlrxw4cyb1v7vb-acl-2.3.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "acl",
+      "broken": false,
+      "derivation": "/nix/store/ka62f61dhfha5y7nrxbrpy4i8xz33c21-acl-2.3.2.drv",
+      "description": "Library and tools for manipulating access control lists",
+      "install_id": "acl",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5135c59491985879812717f4c9fea69604e7f26f",
+      "name": "acl-2.3.2",
+      "pname": "acl",
+      "rev": "5135c59491985879812717f4c9fea69604e7f26f",
+      "rev_count": 759373,
+      "rev_date": "2025-02-26T09:09:39Z",
+      "scrape_date": "2025-02-28T05:09:33Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.3.2",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/09lskfnd4frv7p0ijaplmv73116g9a2a-acl-2.3.2-bin",
+        "dev": "/nix/store/0b5hs4vqy5v380fkyjn6rn5f9vihrsz7-acl-2.3.2-dev",
+        "doc": "/nix/store/1qhdkl8lc7mgaskp2v9ph2wqw6h1ki0h-acl-2.3.2-doc",
+        "man": "/nix/store/slh85jx2wjs4nb60dygyvk49jwx1kgp9-acl-2.3.2-man",
+        "out": "/nix/store/jpbbkpwhgvdr0sgf6x9iv9ysrhd5416x-acl-2.3.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "docker",
       "broken": false,
