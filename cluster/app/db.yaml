@@ -75,10 +75,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-  namespace: app
-    app: postgres
   name: postgres
+  namespace: app
+  labels:
+    app: postgres
 spec:
   type: ClusterIP
   ports:
