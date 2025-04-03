@@ -3,9 +3,6 @@
   "manifest": {
     "version": 1,
     "install": {
-      "diskonaut": {
-        "pkg-path": "diskonaut"
-      },
       "fluxcd": {
         "pkg-path": "fluxcd"
       },
@@ -36,145 +33,29 @@
   },
   "packages": [
     {
-      "attr_path": "diskonaut",
-      "broken": false,
-      "derivation": "/nix/store/v1ir07xqqsdlp4syah1w6wsa834z2an5-diskonaut-0.11.0.drv",
-      "description": "Terminal disk space navigator",
-      "install_id": "diskonaut",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "diskonaut-0.11.0",
-      "pname": "diskonaut",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/kn5qb52mnf74s23i0srx46f08vgy2jh9-diskonaut-0.11.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "diskonaut",
-      "broken": false,
-      "derivation": "/nix/store/ch6iqiii614qsmr8g1p2akpajxsgm1hg-diskonaut-0.11.0.drv",
-      "description": "Terminal disk space navigator",
-      "install_id": "diskonaut",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "diskonaut-0.11.0",
-      "pname": "diskonaut",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/pyp7bq682165jg3zlz21034s0djzlkq3-diskonaut-0.11.0"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "diskonaut",
-      "broken": false,
-      "derivation": "/nix/store/v59377xw86bfzdr3c6nx9r0hjnjla3sl-diskonaut-0.11.0.drv",
-      "description": "Terminal disk space navigator",
-      "install_id": "diskonaut",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "diskonaut-0.11.0",
-      "pname": "diskonaut",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/pf6qhnrj04d3x72gr49nwv2r5w5apic7-diskonaut-0.11.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "diskonaut",
-      "broken": false,
-      "derivation": "/nix/store/6skmf9h3j17y6brrpyslj43mix9n4rjb-diskonaut-0.11.0.drv",
-      "description": "Terminal disk space navigator",
-      "install_id": "diskonaut",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "diskonaut-0.11.0",
-      "pname": "diskonaut",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/62vfy4lqav54ws8akpmnb99qz6j5x5wl-diskonaut-0.11.0"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
       "attr_path": "fluxcd",
       "broken": false,
-      "derivation": "/nix/store/jp6silfdn6898md67a75higf0q54xsy8-fluxcd-2.4.0.drv",
+      "derivation": "/nix/store/4d43752795dcrjjdl6sria4w3ycykbz6-fluxcd-2.5.1.drv",
       "description": "Open and extensible continuous delivery solution for Kubernetes",
       "install_id": "fluxcd",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "fluxcd-2.4.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "fluxcd-2.5.1",
       "pname": "fluxcd",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:11:03.236389Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.4.0",
+      "version": "2.5.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/2k6gx7dmc51qc9w3ikhzhdrf4l2zigva-fluxcd-2.4.0"
+        "out": "/nix/store/9h5w8zfsx2a15w5spg3ww882w1ly0gkz-fluxcd-2.5.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -183,27 +64,27 @@
     {
       "attr_path": "fluxcd",
       "broken": false,
-      "derivation": "/nix/store/krhbnp6shxfgxx30v1zwv6xw2d275cvn-fluxcd-2.4.0.drv",
+      "derivation": "/nix/store/hcmlsbzir9v7zn0rhma36ipkxwj54fd9-fluxcd-2.5.1.drv",
       "description": "Open and extensible continuous delivery solution for Kubernetes",
       "install_id": "fluxcd",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "fluxcd-2.4.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "fluxcd-2.5.1",
       "pname": "fluxcd",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:28:46.816276Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.4.0",
+      "version": "2.5.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/gnxqqxb2i50ziyxhr9dcdidgsc2dbbsb-fluxcd-2.4.0"
+        "out": "/nix/store/v4qks33l4rmixhjcgwhbj74dpwmc9ngx-fluxcd-2.5.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -212,27 +93,27 @@
     {
       "attr_path": "fluxcd",
       "broken": false,
-      "derivation": "/nix/store/1cvi96wmhagvfnf8brxg1i5aqwvp57v8-fluxcd-2.4.0.drv",
+      "derivation": "/nix/store/qz9r2ngq6g97mixa6fncmcm6m2rp8gq3-fluxcd-2.5.1.drv",
       "description": "Open and extensible continuous delivery solution for Kubernetes",
       "install_id": "fluxcd",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "fluxcd-2.4.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "fluxcd-2.5.1",
       "pname": "fluxcd",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:44:59.939353Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.4.0",
+      "version": "2.5.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/wxx4fhfplzscmy3dzyh9p5wib84r9sv3-fluxcd-2.4.0"
+        "out": "/nix/store/kds4lgjpa3ravr57kc7ml8z05ls29m6a-fluxcd-2.5.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -241,27 +122,27 @@
     {
       "attr_path": "fluxcd",
       "broken": false,
-      "derivation": "/nix/store/x2l45f16cbkj3zpv6h7wwvffncsfdcs7-fluxcd-2.4.0.drv",
+      "derivation": "/nix/store/insvhbfs8xyvrqxz6gf32rby8hhby5d6-fluxcd-2.5.1.drv",
       "description": "Open and extensible continuous delivery solution for Kubernetes",
       "install_id": "fluxcd",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "fluxcd-2.4.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "fluxcd-2.5.1",
       "pname": "fluxcd",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T02:04:24.784985Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.4.0",
+      "version": "2.5.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/yk2xip9sajrrvymmacmmxw38m6p4kl25-fluxcd-2.4.0"
+        "out": "/nix/store/h689zlv8awh39krjyx7cw4kj7za7ifs5-fluxcd-2.5.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -270,27 +151,27 @@
     {
       "attr_path": "kind",
       "broken": false,
-      "derivation": "/nix/store/wpmmcqfn471c4bj3fla1wfs8kapjni6a-kind-0.26.0.drv",
+      "derivation": "/nix/store/6g0hxa4phkh5ppdf5vjn0zshb2q77hw2-kind-0.27.0.drv",
       "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
       "install_id": "kind",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kind-0.26.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kind-0.27.0",
       "pname": "kind",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:11:03.981861Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.26.0",
+      "version": "0.27.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/4j12j5zijvbcyafx85a2qh8jkv4m6lnz-kind-0.26.0"
+        "out": "/nix/store/4a41v4iyxw1cbi9jjcqz9sga7ghmfs3x-kind-0.27.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -299,27 +180,27 @@
     {
       "attr_path": "kind",
       "broken": false,
-      "derivation": "/nix/store/7l3br3mab819zbs96fijxifwkp5lq36a-kind-0.26.0.drv",
+      "derivation": "/nix/store/kzrby50z0l6lqjlx64xa1cdcvqnp1vvc-kind-0.27.0.drv",
       "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
       "install_id": "kind",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kind-0.26.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kind-0.27.0",
       "pname": "kind",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:28:49.117045Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.26.0",
+      "version": "0.27.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/gkpan5sh4kmbxknrf79p9ssd1j024ydb-kind-0.26.0"
+        "out": "/nix/store/mn4lxpp4ljwmdbxxf2vsir0qynxknmir-kind-0.27.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -328,27 +209,27 @@
     {
       "attr_path": "kind",
       "broken": false,
-      "derivation": "/nix/store/rylhix86pwzdnafjzi7z2slbayjm88wj-kind-0.26.0.drv",
+      "derivation": "/nix/store/1d6rv0wgc6nwz1y8w4pssmxnp221h0j6-kind-0.27.0.drv",
       "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
       "install_id": "kind",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kind-0.26.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kind-0.27.0",
       "pname": "kind",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:45:00.727585Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.26.0",
+      "version": "0.27.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/2vsw8jyi2n4sm74sk1kbff6hq5v8nz6i-kind-0.26.0"
+        "out": "/nix/store/dghvkd9447z78qncg108djwzfp6dza5n-kind-0.27.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -357,27 +238,27 @@
     {
       "attr_path": "kind",
       "broken": false,
-      "derivation": "/nix/store/c8wdjh48zr3h99qxcvwir9pzn2pz5rsr-kind-0.26.0.drv",
+      "derivation": "/nix/store/jhfnq3rddwwgn1xz9svzr2r2xvsnjwfx-kind-0.27.0.drv",
       "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
       "install_id": "kind",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kind-0.26.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kind-0.27.0",
       "pname": "kind",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T02:04:27.227047Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.26.0",
+      "version": "0.27.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/hp80rb9dpsk2wj5db2zngh5b8hrgwy4k-kind-0.26.0"
+        "out": "/nix/store/dam02bb33zcl468fz2dldiz4r33jli3x-kind-0.27.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -386,30 +267,30 @@
     {
       "attr_path": "kubectl",
       "broken": false,
-      "derivation": "/nix/store/ib934vd0i54lzga5sz3mv8036m5arxy2-kubectl-1.32.1.drv",
+      "derivation": "/nix/store/pw1g6had65hm9xw6pdaq1sm8042k5hv2-kubectl-1.32.3.drv",
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubectl-1.32.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubectl-1.32.3",
       "pname": "kubectl",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:11:04.037141Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.32.1",
+      "version": "1.32.3",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "convert": "/nix/store/4ahm5rn4f326izlh8nh6zfcf066r0jp9-kubectl-1.32.1-convert",
-        "man": "/nix/store/7aqhrqy27487ph8gcqwl92lpn48zczlm-kubectl-1.32.1-man",
-        "out": "/nix/store/18441nqn0dahiwn1rvwilqvrqwqvvknz-kubectl-1.32.1"
+        "convert": "/nix/store/syijh55f8qy0ncx0drs4adxzgglx3y43-kubectl-1.32.3-convert",
+        "man": "/nix/store/aq8zfxz4q27wd3yfvhg195xnhqz0sadv-kubectl-1.32.3-man",
+        "out": "/nix/store/wi5qn5xlirnjzva70km0z5ks6i33hz9j-kubectl-1.32.3"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -418,30 +299,30 @@
     {
       "attr_path": "kubectl",
       "broken": false,
-      "derivation": "/nix/store/ighhxrv25af51d7jy5zjap1d1zfs8sgy-kubectl-1.32.1.drv",
+      "derivation": "/nix/store/23wd9i64hhw1vfklz5m5zg9v87zvir3b-kubectl-1.32.3.drv",
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubectl-1.32.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubectl-1.32.3",
       "pname": "kubectl",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:28:49.253834Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.32.1",
+      "version": "1.32.3",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "convert": "/nix/store/y9kx67c1h6sjr3l4vp7j200v640h32kr-kubectl-1.32.1-convert",
-        "man": "/nix/store/0f95qz0ynbilx8h0z350in0d8kc9aj1m-kubectl-1.32.1-man",
-        "out": "/nix/store/jylypnz6nddbqf85glbyhpmjsbgmlayj-kubectl-1.32.1"
+        "convert": "/nix/store/cmgasqw6vnwln9ap187cjr44gf5aqqvj-kubectl-1.32.3-convert",
+        "man": "/nix/store/a6k0kw0b5xbd0zbsjmwwn17sbx9pimk0-kubectl-1.32.3-man",
+        "out": "/nix/store/l1jx4vdkjqg9p022skazx0i7vasqncs0-kubectl-1.32.3"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -450,30 +331,30 @@
     {
       "attr_path": "kubectl",
       "broken": false,
-      "derivation": "/nix/store/yhxniyk33140l70j9v3whiy03ay4n6f0-kubectl-1.32.1.drv",
+      "derivation": "/nix/store/402x1mrpscg225qy6nmavznyhf03rbpk-kubectl-1.32.3.drv",
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubectl-1.32.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubectl-1.32.3",
       "pname": "kubectl",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:45:00.784256Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.32.1",
+      "version": "1.32.3",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "convert": "/nix/store/83qij5g1wkrrwzjn1cwnkd342ifzw97x-kubectl-1.32.1-convert",
-        "man": "/nix/store/5p29mlkb5ywfn2znwb3pxbyr187585yy-kubectl-1.32.1-man",
-        "out": "/nix/store/c4ha370mr37kzmr5d3k3x2f7ln51r9fz-kubectl-1.32.1"
+        "convert": "/nix/store/6bqfs8a1sw4jvx9wadd5231fnr9yjdnh-kubectl-1.32.3-convert",
+        "man": "/nix/store/asq72wx432y362wflqhlg1c231g5svzc-kubectl-1.32.3-man",
+        "out": "/nix/store/1q5hp8ffvjfx9badhfq0b7vcaz63fphg-kubectl-1.32.3"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -482,30 +363,30 @@
     {
       "attr_path": "kubectl",
       "broken": false,
-      "derivation": "/nix/store/af2yd0f6gq06p1hdmxz9w01pzaprf3ad-kubectl-1.32.1.drv",
+      "derivation": "/nix/store/0c76i7crrzs3l5jyarj387w8651h13mx-kubectl-1.32.3.drv",
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubectl-1.32.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubectl-1.32.3",
       "pname": "kubectl",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T02:04:27.369265Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.32.1",
+      "version": "1.32.3",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "convert": "/nix/store/1lkaw0m4238bichjjl5jkkpqpvxahp43-kubectl-1.32.1-convert",
-        "man": "/nix/store/jb9zc5f93z67xaldz5zmmnv8d5pzc94r-kubectl-1.32.1-man",
-        "out": "/nix/store/v312kkwzk8mibc9z67n53hab6mcc7cn5-kubectl-1.32.1"
+        "convert": "/nix/store/5x3bhl684w2lmpg7k5dl8rz1408ci32g-kubectl-1.32.3-convert",
+        "man": "/nix/store/xdh1fr0b4dnladi7dwa0q2vwf878g9qd-kubectl-1.32.3-man",
+        "out": "/nix/store/yaqxnlxynfil1c6lvxfrnmh06yfqarn8-kubectl-1.32.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -514,27 +395,27 @@
     {
       "attr_path": "kubernetes-helm",
       "broken": false,
-      "derivation": "/nix/store/kpahysirzgr5qw3nlb2ddhw94xgd3580-kubernetes-helm-3.17.0.drv",
+      "derivation": "/nix/store/ird90caaghwhd6sl587rcjlm001mcv0v-kubernetes-helm-3.17.2.drv",
       "description": "Package manager for kubernetes",
       "install_id": "kubernetes-helm",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubernetes-helm-3.17.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubernetes-helm-3.17.2",
       "pname": "kubernetes-helm",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:11:04.048919Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.17.0",
+      "version": "3.17.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/kqb20496bhsi6wlggidm645ncch8lzxw-kubernetes-helm-3.17.0"
+        "out": "/nix/store/0zb6130k4msbr1dnjh3bi8h0930mdzfi-kubernetes-helm-3.17.2"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -543,27 +424,27 @@
     {
       "attr_path": "kubernetes-helm",
       "broken": false,
-      "derivation": "/nix/store/4z9jl688lwmmfsghpj5yysw8j0jzn3f0-kubernetes-helm-3.17.0.drv",
+      "derivation": "/nix/store/ydyszs04jj1r8y75wdpr3q44kwl0jabb-kubernetes-helm-3.17.2.drv",
       "description": "Package manager for kubernetes",
       "install_id": "kubernetes-helm",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubernetes-helm-3.17.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubernetes-helm-3.17.2",
       "pname": "kubernetes-helm",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:28:49.272894Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.17.0",
+      "version": "3.17.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/d60427zv4gsskq2rsq6yfbzzwgr4xdz7-kubernetes-helm-3.17.0"
+        "out": "/nix/store/j3rj0k8ry052m17gk81cab5fp39jnxb1-kubernetes-helm-3.17.2"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -572,27 +453,27 @@
     {
       "attr_path": "kubernetes-helm",
       "broken": false,
-      "derivation": "/nix/store/awvwmrfr3b22s7b4vk84p555mkjyw420-kubernetes-helm-3.17.0.drv",
+      "derivation": "/nix/store/azx6inv9766zlrdb3lb1jq1yrldskxnd-kubernetes-helm-3.17.2.drv",
       "description": "Package manager for kubernetes",
       "install_id": "kubernetes-helm",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubernetes-helm-3.17.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubernetes-helm-3.17.2",
       "pname": "kubernetes-helm",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:45:00.796281Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.17.0",
+      "version": "3.17.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zak1xp04pcfm0b9gaap9jxp4bq0lawxq-kubernetes-helm-3.17.0"
+        "out": "/nix/store/n0j4vcxz215xc76fa16brb7dd2wjzcwy-kubernetes-helm-3.17.2"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -601,27 +482,27 @@
     {
       "attr_path": "kubernetes-helm",
       "broken": false,
-      "derivation": "/nix/store/mk04205xyz7w0di4z9nvkxcqg8j9acsc-kubernetes-helm-3.17.0.drv",
+      "derivation": "/nix/store/h1q8yj7r8jjp47j9c0ij5331bafm95ws-kubernetes-helm-3.17.2.drv",
       "description": "Package manager for kubernetes",
       "install_id": "kubernetes-helm",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=825479c345a7f806485b7f00dbe3abb50641b083",
-      "name": "kubernetes-helm-3.17.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "kubernetes-helm-3.17.2",
       "pname": "kubernetes-helm",
-      "rev": "825479c345a7f806485b7f00dbe3abb50641b083",
-      "rev_count": 743381,
-      "rev_date": "2025-01-24T19:21:52Z",
-      "scrape_date": "2025-01-26T03:27:56Z",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T02:04:27.388638Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.17.0",
+      "version": "3.17.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zidsngzm5lwyabaq9fy6m9h6sifk6pg8-kubernetes-helm-3.17.0"
+        "out": "/nix/store/a7869w8md1im50aynkzvp1yvdwcamw39-kubernetes-helm-3.17.2"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

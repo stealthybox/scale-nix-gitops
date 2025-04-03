@@ -19,7 +19,6 @@ kubectl.pkg-path = "kubectl"
 fluxcd.pkg-path = "fluxcd"
 kind.pkg-path = "kind"
 kubernetes-helm.pkg-path = "kubernetes-helm"
-diskonaut.pkg-path = "diskonaut"
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 
