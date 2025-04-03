@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: scrapbook
+  namespace: app
 spec:
   replicas: 1
   selector:
@@ -29,9 +30,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  name: scrapbook
+  namespace: app
   labels:
     app: scrapbook
-  name: scrapbook
 spec:
   type: ClusterIP
   ports:

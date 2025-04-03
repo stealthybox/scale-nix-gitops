@@ -3,6 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: postgres-init
+  namespace: app
 data:
   todos.sql: "CREATE TABLE todos ( item text, mimetype text, image text );"
 
@@ -11,6 +12,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: postgres
+  namespace: app
 type: Opaque
 stringData:
   # client
@@ -35,6 +37,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres
+  namespace: app
 spec:
   replicas: 1
   selector:
@@ -73,6 +76,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
+  namespace: app
     app: postgres
   name: postgres
 spec:
