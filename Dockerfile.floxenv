@@ -1,0 +1,13 @@
+FROM ghcr.io/flox/flox:v1.3.16 AS floxenv
+
+WORKDIR /floxenv
+COPY .flox .flox
+RUN flox activate
+RUN mkdir -p nix/store; \
+    for path in \
+      $(nix-store --query --requisites \
+          .flox/run/$(nix-instantiate --eval --expr 'builtins.currentSystem' | tr -d '"').*.*); \
+    do echo $path; cp -lR $path /floxenv/$path; done;
+
+FROM alpine:latest
+COPY --from=floxenv /floxenv/nix/store /nix/store
